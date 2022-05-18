@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="scenePane" prefHeight="773.0" prefWidth="802.0" style="-fx-background-color: #292824; -fx-border-color: black; -fx-border-radius: 5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="otomationface.anafacecontroller">
+   <children>
+      <TextField fx:id="baskifield" alignment="CENTER" layoutX="331.0" layoutY="387.0" prefHeight="34.0" prefWidth="139.0" promptText="BASKI SAYISI" style="-fx-background-color: #8f8d82;" />
+      <Pane fx:id="scenePanel" layoutY="-3.0" prefHeight="42.0" prefWidth="802.0" style="-fx-background-color: #1c1b19; -fx-border-color: #3d3c38;">
+         <children>
+            <Text fill="#fdfdfd" layoutX="14.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MatBaa Otomation">
+               <font>
+                  <Font name="Comic Sans MS" size="20.0" />
+               </font>
+            </Text>
+            <Button fx:id="closebtn" layoutX="773.0" layoutY="10.0" mnemonicParsing="false" onAction="#logout" style="-fx-background-color: #363128; -fx-border-radius: 4; -fx-border-color: white;" text="X" textFill="#dd0707" />
+         </children>
+      </Pane>
+      <ImageView fx:id="img6" fitHeight="66.0" fitWidth="109.0" layoutX="368.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../AppData/Local/Temp/icons8_yoga_mat_64px_2.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="tcknfield" alignment="CENTER" layoutX="289.0" layoutY="150.0" prefHeight="34.0" prefWidth="224.0" promptText="TCKN" style="-fx-background-color: #8f8d82;" />
+      <TextField fx:id="adfield" alignment="CENTER" layoutX="331.0" layoutY="201.0" prefHeight="34.0" prefWidth="139.0" promptText="AD" style="-fx-background-color: #8f8d82;" />
+      <TextField fx:id="soyadfield" alignment="CENTER" layoutX="331.0" layoutY="249.0" prefHeight="34.0" prefWidth="139.0" promptText="SOYAD" style="-fx-background-color: #8f8d82;" />
+      <TextField fx:id="companyfield" alignment="CENTER" layoutX="331.0" layoutY="297.0" prefHeight="34.0" prefWidth="139.0" promptText="SIRKET ADI" style="-fx-background-color: #8f8d82;" />
+      <TextField fx:id="baskisurefield" alignment="CENTER" layoutX="331.0" layoutY="435.0" prefHeight="34.0" prefWidth="139.0" promptText="BASKI SÜRE" style="-fx-background-color: #8f8d82;" />
+      <TextField fx:id="bastarihfield" alignment="CENTER" layoutX="331.0" layoutY="485.0" prefHeight="34.0" prefWidth="139.0" promptText="Bas.TARİH" style="-fx-background-color: #8f8d82;" />
+      <TextField fx:id="bittarihfield" alignment="CENTER" layoutX="331.0" layoutY="532.0" prefHeight="34.0" prefWidth="139.0" promptText="Bit.TARİH" style="-fx-background-color: #8f8d82;" />
+      <HBox layoutX="235.0" layoutY="595.0" prefHeight="18.0" prefWidth="335.0" spacing="30.0" style="-fx-background-color: #292824;">
+         <children>
+            <Text fill="#ededed" strokeType="OUTSIDE" strokeWidth="0.0" text="RENK SEÇİMİ:" />
+            <RadioButton fx:id="radiobtn1" mnemonicParsing="false" text="RENKLİ" textFill="WHITE" />
+            <RadioButton fx:id="radiobtn2" mnemonicParsing="false" text="RENKSİZ" textFill="WHITE" />
+         </children>
+      </HBox>
+      <HBox layoutX="235.0" layoutY="625.0" prefHeight="18.0" prefWidth="335.0" spacing="30.0" style="-fx-background-color: #292824;">
+         <children>
+            <Text fill="#ededed" strokeType="OUTSIDE" strokeWidth="0.0" text="KALİTE:" />
+            <RadioButton fx:id="radiobtn3" mnemonicParsing="false" text="DÜŞÜK" textFill="WHITE" />
+            <RadioButton fx:id="radiobtn4" mnemonicParsing="false" text="YÜKSEK" textFill="WHITE" />
+         </children>
+      </HBox>
+      <HBox layoutX="235.0" layoutY="655.0" prefHeight="18.0" prefWidth="335.0" spacing="30.0" style="-fx-background-color: #292824;">
+         <children>
+            <Text fill="#ededed" strokeType="OUTSIDE" strokeWidth="0.0" text="YUMUŞATMA:" />
+            <RadioButton fx:id="radiobtn5" mnemonicParsing="false" text="EVET" textFill="WHITE" />
+            <RadioButton fx:id="radiobtn6" mnemonicParsing="false" text="HAYIR" textFill="WHITE" />
+         </children>
+      </HBox>
+      <Pane layoutX="681.0" layoutY="38.0" prefHeight="734.0" prefWidth="122.0" style="-fx-background-color: #474641; -fx-border-color: black;">
+         <children>
+            <ImageView fx:id="img1" fitHeight="50.0" fitWidth="48.0" layoutX="37.0" layoutY="98.0" onMouseClicked="#kaydetBtnaction">
+               <image>
+                  <Image url="@../../../../AppData/Local/Temp/icons8_save_64px_1.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Text fill="WHITE" layoutX="37.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KAYIT">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="img2" fitHeight="50.0" fitWidth="48.0" layoutX="37.0" layoutY="202.0" onMouseClicked="#bulbtnaction">
+               <image>
+                  <Image url="@../../../../AppData/Local/Temp/icons8_search_50px.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Text fill="WHITE" layoutX="44.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BUL">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="img3" fitHeight="50.0" fitWidth="48.0" layoutX="39.0" layoutY="311.0" onMouseClicked="#btnguncelleaction">
+               <image>
+                  <Image url="@../../../../AppData/Local/Temp/icons8_update_50px.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Text fill="WHITE" layoutX="16.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GÜNCELLE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="img4" fitHeight="50.0" fitWidth="48.0" layoutX="39.0" layoutY="419.0">
+               <image>
+                  <Image url="@../../../../AppData/Local/Temp/icons8_table_30px.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Text fill="WHITE" layoutX="16.0" layoutY="497.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KULLANICILAR">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="img5" fitHeight="50.0" fitWidth="48.0" layoutX="39.0" layoutY="521.0" onMouseClicked="#btnsilaction">
+               <image>
+                  <Image url="@../../../../AppData/Local/Temp/icons8_exit_24px.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Text fill="WHITE" layoutX="53.0" layoutY="599.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SİL">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <TextArea fx:id="adresfield" layoutX="218.0" layoutY="681.0" prefHeight="86.0" prefWidth="365.0" promptText="ADRES:" style="-fx-background-color: #8f8d82;" />
+      <DatePicker fx:id="datepicker1" layoutX="486.0" layoutY="489.0" minHeight="-Infinity" minWidth="-Infinity" onAction="#dtpicker1control" prefHeight="26.0" prefWidth="25.0" />
+      <DatePicker fx:id="datepicker2" layoutX="486.0" layoutY="536.0" minHeight="-Infinity" minWidth="-Infinity" onAction="#dtpicker2control" prefHeight="26.0" prefWidth="26.0" />
+      <TextField fx:id="ort" alignment="CENTER" layoutX="331.0" layoutY="341.0" prefHeight="34.0" prefWidth="139.0" promptText="ORTALAMA DEĞER" style="-fx-background-color: #8f8d82;" />
+   </children>
+</AnchorPane>
